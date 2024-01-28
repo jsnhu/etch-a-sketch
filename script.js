@@ -1,4 +1,4 @@
-gridContainer = document.querySelector('.grid-container');
+const gridContainer = document.querySelector('.grid-container');
 
 for (i=0;i<256;i++) {
     const newGrid = document.createElement('div');
@@ -7,7 +7,7 @@ for (i=0;i<256;i++) {
     gridContainer.appendChild(newGrid);
 }
 
-squares = document.querySelectorAll('.square');
+let squares = document.querySelectorAll('.square');
 
 squares.forEach((square) => {
     square.addEventListener('mouseover', ()=>{
