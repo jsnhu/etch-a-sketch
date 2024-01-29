@@ -25,6 +25,7 @@ body {
 .header {
     display: flex;
     height: 5vh;
+    padding: 10px;
 }
 
 .reset, .erase {
@@ -32,7 +33,8 @@ body {
     color: aliceblue;
     font-size: large;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 40px;
+    border: 3px solid rgba(255, 255, 255, 0.262);
 }
 
 .reset {
