@@ -53,3 +53,9 @@ eraseButton.addEventListener('click', () => {
     eraseButton.style.backgroundColor = temp;
     eraseMode = !eraseMode;
 });
+
+resetButton.addEventListener('click', () => {
+    squares.forEach(square => {
+        square.style.backgroundColor = 'black';
+    }) 
+});
