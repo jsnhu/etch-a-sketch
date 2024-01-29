@@ -9,7 +9,7 @@ eraseButton.style.color = 'aliceblue';
 eraseButton.style.backgroundColor = 'black';
 
 
-const SQUARE_SIZE = 40;
+const SQUARE_SIZE = 48;
 
 gridContainer.style.width = screen.availWidth;
 gridContainer.style.height = screen.availHeight;
