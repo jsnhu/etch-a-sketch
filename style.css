@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
 .grid-container {
     display: flex;
     flex-wrap: wrap;
@@ -5,7 +10,7 @@
 
 
 .square {
-    background-color: red;
+    background-color: burlywood;
     box-sizing: border-box;
     aspect-ratio: 1;
 }
