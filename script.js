@@ -1,8 +1,14 @@
 const gridContainer = document.querySelector('.grid-container');
 
-for (i=0;i<256;i++) {
+const SQUARE_SIZE = 20;
+
+const numSquaresWidth = Math.floor(screen.availWidth / SQUARE_SIZE);
+const numSquaresHeight = Math.floor(screen.availHeight / SQUARE_SIZE);
+
+for (i=0;i<numSquaresHeight*numSquaresWidth;i++) {
     const newGrid = document.createElement('div');
     newGrid.classList.toggle('square');
+    newGrid.style.width = SQUARE_SIZE + "px";
 
     gridContainer.appendChild(newGrid);
 }
