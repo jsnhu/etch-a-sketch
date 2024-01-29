@@ -11,11 +11,11 @@ eraseButton.style.backgroundColor = 'black';
 
 const SQUARE_SIZE = 48;
 
-gridContainer.style.width = screen.availWidth;
-gridContainer.style.height = screen.availHeight;
-
 const numSquaresWidth = Math.floor(screen.availWidth / SQUARE_SIZE);
 const numSquaresHeight = Math.floor(screen.availHeight / SQUARE_SIZE);
+
+gridContainer.style.width = `${numSquaresWidth * SQUARE_SIZE}px`;
+gridContainer.style.height = `${numSquaresHeight * SQUARE_SIZE}px`;
 
 for (i=0;i<numSquaresHeight*numSquaresWidth;i++) {
     const newGrid = document.createElement('div');
