@@ -1,6 +1,6 @@
 const gridContainer = document.querySelector('.grid-container');
 
-const SQUARE_SIZE = 20;
+const SQUARE_SIZE = 30;
 
 const numSquaresWidth = Math.floor(screen.availWidth / SQUARE_SIZE);
 const numSquaresHeight = Math.floor(screen.availHeight / SQUARE_SIZE);
