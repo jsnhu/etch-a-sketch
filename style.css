@@ -21,3 +21,23 @@ body {
 .square-touched {
     background-color: rgb(255, 255, 255);    
 }
+
+.header {
+    display: flex;
+    height: 5vh;
+}
+
+.reset, .erase {
+    background-color: black;
+    color: aliceblue;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.reset {
+    flex: 0.25;
+}
+.erase {
+    flex: 1;
+}
