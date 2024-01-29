@@ -33,13 +33,13 @@ squares.forEach((square) => {
         if (eraseMode) {
             resetSquare(square)
         } else {
-            const randR = Math.random()*255;
-            const randG = Math.random()*255;
-            const randB = Math.random()*255;
+            const valueR = 255;
+            const valueG = Math.random()*255;
+            const valueB = 0;
 
             square.classList.remove('square');
             square.classList.add('square-touched');
-            square.style.backgroundColor = `rgb(${randR}, ${randG}, ${randB})`;
+            square.style.backgroundColor = `rgb(${valueR}, ${valueG}, ${valueB})`;
         }
     });
 });
