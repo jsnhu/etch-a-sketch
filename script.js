@@ -33,9 +33,9 @@ squares.forEach((square) => {
         if (eraseMode) {
             resetSquare(square)
         } else {
-            const valueR = 255;
-            const valueG = Math.random()*255;
-            const valueB = 0;
+            const valueR = 0;
+            const valueG = Math.floor(Math.random()*255);
+            const valueB = 255;
 
             square.classList.remove('square');
             square.classList.add('square-touched');
