@@ -21,6 +21,12 @@ let squares = document.querySelectorAll('.square');
 
 squares.forEach((square) => {
     square.addEventListener('mouseover', ()=>{
-        square.style.backgroundColor = "black";
+        const randR = Math.random()*255;
+        const randG = Math.random()*255;
+        const randB = Math.random()*255;
+
+        square.classList.toggle('square');
+        square.classList.toggle('square-touched');
+        square.style.backgroundColor = `rgb(${randR}, ${randG}, ${randB})`;
     });
 });
