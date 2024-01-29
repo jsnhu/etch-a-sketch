@@ -31,9 +31,7 @@ squares.forEach((square) => {
     square.addEventListener('mouseover', ()=>{
 
         if (eraseMode) {
-            square.classList.remove('square-touched');
-            square.classList.add('square');
-            square.style.backgroundColor = 'black';
+            resetSquare(square)
         } else {
             const randR = Math.random()*255;
             const randG = Math.random()*255;
@@ -55,6 +53,13 @@ eraseButton.addEventListener('click', () => {
 
 resetButton.addEventListener('click', () => {
     squares.forEach(square => {
-        square.style.backgroundColor = 'black';
+        resetSquare(square)
+
     }) 
 });
+
+function resetSquare(square) {
+    square.classList.remove('square-touched');
+    square.classList.add('square');
+    square.style.backgroundColor = `rgb(39,39,39)`;
+}
